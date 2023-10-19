@@ -1,0 +1,29 @@
+<center>
+	<h1> Edit Employee</h1> 
+
+<%= form_with model: @employee do |form| %>
+
+	<% if @employee.errors.any? %>
+		<% @employee.errors.full_messages.each do |message| %>
+			<p><%= message %></p>
+		<% end %>
+	<% end %>
+
+	<div>
+		<%= form.label :name %><br><br>
+		<%= form.text_field :name %><br><br>
+	</div>
+	<div>
+		<%= form.label :phone_number %><br><br>
+		<%= form.number_field :phone_number %><br><br>
+	</div>
+	<div>
+		<%= form.label :date_of_birth%><br><br>
+		<%= form.date_field :date_of_birth%><br><br>
+	</div>
+	<%= form.submit %><br><br>
+	<%= link_to 'Back',employees_path %>
+
+
+<%end%>
+</center>

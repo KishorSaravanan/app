@@ -1,0 +1,9 @@
+<center><h1>Employee Details</h1>
+
+<p><strong>Name : </strong><%= @employee.name %></p>
+<p><strong>PhoneNumber : </strong><%= @employee.phone_number %></p>
+<p><strong>Date Of Birth : </strong><%= formatted_date(@employee.date_of_birth) %></p>
+
+<%= link_to 'Back',employees_path %><br><br>
+<%= link_to 'Edit',edit_employee_path(@employee) %>
+</center>

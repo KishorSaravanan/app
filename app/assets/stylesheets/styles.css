@@ -1,0 +1,38 @@
+/*center {
+	
+}*/
+body{
+	background-color:#FBECB2;
+}
+h1{
+	color:#4A55A2;
+}
+table{
+	width: 50%;
+	text-align: center;
+	margin:1px;
+	border-collapse: collapse; 
+	border:2px solid black;
+}  
+thead tr{
+	background-color:#7895CB;
+}
+thead th{
+	font-size: 100%;
+}
+tbody tr:nth-child(odd){
+	background-color:#A0BFE0;
+}table td a:hover{
+	background-color:#C5DFF8;
+}
+tbody tr:nth-child(even){
+	background-color:whitesmoke;
+}
+table td{
+	font-size: 80%;
+}
+table th,table tr,table td{
+	border: 2px solid black ;
+	padding: 10px;
+	
+}
