@@ -26,7 +26,7 @@ class EmployeesController < ApplicationController
 			end
 		#else
 			#flash.alert = "Empty field"
-		#end
+		#render
 
 	end
 
